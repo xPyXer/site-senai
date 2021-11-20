@@ -1,0 +1,213 @@
+/* CSS MENU RESPONSIVO */
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover {
+    opacity: 0.7;
+}
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #005CAA;
+    height: 18vh;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer; 
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
+    transition: 0.4s;
+}
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+.nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #005CAA;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: transform 0.3s ease-in;
+}
+.nav-list li {
+    margin-left: 0;
+    opacity: 0;
+}
+.mobile-menu {
+    display: block;
+}
+.nav-list.active {
+    transform: translateX(0);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.mobile-menu.nav-list.active .line1 {
+    transform: rotate(-45deg) translate(-8px,8px);
+}
+.mobile-menu.nav-list.active line2 {
+    opacity: 0;
+}
+.mobile-menu.nav-list.active line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* CSS Banner */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+    margin: 30px auto;
+    background-color: #005caa;
+}
+.section-banner-home img {
+    height: 400px;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a {
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+
+
+/* Galeria */
+.destaque h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque .destaque p{
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #30dcf4;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+} 
+.novidades {
+    background-color: #082373;
+    padding: 50px;
+}
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+.novidades h2 {
+    color: #fff;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: #fff;
+}
+.novidades a {
+    color: #000;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #fff;
+    font-weight: 400;
+}
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria h2 {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+
+
+/* CSS FOOTER */
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .info-contato {
+    margin: 0px;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.redes-sociais p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
